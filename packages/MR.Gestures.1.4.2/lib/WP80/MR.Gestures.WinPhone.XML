@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MR.Gestures.WinPhone</name>
+    </assembly>
+    <members>
+        <member name="M:MR.Gestures.WinPhone.Renderers.DependencyObjectExtensions.FindChild``1(System.Windows.DependencyObject,System.String)">
+            <summary>
+            Find any child of type T and Name childname.
+            Searches down the tree first and then the siblings.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="parent"></param>
+            <param name="childName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MR.Gestures.WinPhone.Renderers.DependencyObjectExtensions.FindAllChildren``1(System.Windows.DependencyObject,System.Int32)">
+            <summary>
+            Finds all children of type T.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="parent"></param>
+            <param name="depth"></param>
+            <returns></returns>
+        </member>
+        <member name="P:MR.Gestures.WinPhone.Settings.LicenseKey">
+            <summary>
+            Set the LicenseKey to the key you got when you purchased a license for this app. The license key varies with the app name.
+            </summary>
+        </member>
+        <member name="M:MR.Gestures.WinPhone.WinPhoneGestureHandler.onManipulationDelta(System.Object,System.Windows.Input.ManipulationDeltaEventArgs)">
+            <summary>
+            Handles the ManipulationDelta event. Recognizes various gestures and calls the appropriate methods.
+            This method comes more or less from https://phone.codeplex.com/SourceControl/latest#PhoneToolkitSample8/Samples/GestureSample.xaml.cs
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+    </members>
+</doc>

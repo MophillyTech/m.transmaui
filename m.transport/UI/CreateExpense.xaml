@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+		xmlns:l="clr-namespace:m.transport"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		xmlns:sys="clr-namespace:System;assembly=mscorlib"
+		x:Class="m.transport.CreateExpense" Title="New Expense">
+	<ScrollView>
+		<StackLayout BackgroundColor="{StaticResource PrimaryBackground}" Padding="20,20">
+			<StackLayout x:Name="TypeLayout" Orientation="Horizontal">
+				<Label VerticalTextAlignment="Center" VerticalOptions="Center" Text="Type"  MinimumWidthRequest="100" WidthRequest="100" HeightRequest="40"
+							TextColor="{StaticResource DarkestText}" />
+				<Button HeightRequest="40" StyleId="type" Clicked="OnClicked" HorizontalOptions="FillAndExpand" x:Name="TypeButton" Text=""
+						TextColor="{StaticResource DarkestText}" BackgroundColor="{StaticResource WhiteBackground}"/>
+			</StackLayout>
+			<StackLayout x:Name="DateLayout" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+				<Label VerticalTextAlignment="Center" HeightRequest="40" VerticalOptions="Center" Text="Date" MinimumWidthRequest="100" WidthRequest="100"
+							TextColor="{StaticResource DarkestText}" />
+				<l:ExtendedDatePicker Align="Left" HeightRequest="40" x:Name="ExpDate" VerticalOptions="CenterAndExpand" Format="MM/dd/yyyy"
+					HorizontalOptions="FillAndExpand" MaximumDate="{Binding MaxDate}" Date="{Binding SelectedDate}"/>
+			</StackLayout>
+			<StackLayout x:Name="AmountLayout" Orientation="Horizontal">
+				<Label VerticalTextAlignment="Center" HeightRequest="40" VerticalOptions="Center" Text="Amount" MinimumWidthRequest="100" WidthRequest="100"
+							TextColor="{StaticResource DarkestText}" />
+				<l:ExtendedEntry Align="Left" HeightRequest="40" StyleId="amount" HorizontalOptions="FillAndExpand" x:Name="Amount" Keyboard="Numeric" Text="{Binding Amount}"
+						TextColor="{StaticResource DarkestText}" BackgroundColor="{StaticResource WhiteBackground}" />
+			</StackLayout>
+
+			<Label VerticalOptions="Center" Text="Description" x:Name="Description" TextColor="{StaticResource DarkestText}" />
+
+			<Editor BackgroundColor="{StaticResource WhiteBackground}" Text="{Binding Description}" x:Name="DescriptionBox" HeightRequest="100" />
+
+			<StackLayout x:Name="TruckLayout" Orientation="Horizontal">
+				<Label VerticalTextAlignment="Center" HeightRequest="40" VerticalOptions="Center" Text="Truck #" MinimumWidthRequest="100" WidthRequest="100"
+							TextColor="{StaticResource DarkestText}" IsEnabled="false"/>
+				<l:ExtendedEntry Align="Left" HeightRequest="40" StyleId="truck" HorizontalOptions="FillAndExpand" x:Name="Truck" Text="{Binding Truck}"
+						TextColor="{StaticResource DarkestText}" BackgroundColor="Color.Gray" IsEnabled="false"/>
+			</StackLayout>
+
+			<Label StyleId="createExpense_error" Text="Please fill in all fields" FontSize="Small"  x:Name="Validation"
+					TextColor="{StaticResource ErrorText}" IsVisible="false" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+			
+		</StackLayout>
+	</ScrollView>
+</ContentPage>

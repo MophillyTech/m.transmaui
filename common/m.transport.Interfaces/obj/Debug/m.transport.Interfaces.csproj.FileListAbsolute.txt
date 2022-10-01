@@ -1,0 +1,12 @@
+D:\GITHUB\m.transport\common\m.transport.Interfaces\bin\Debug\m.transport.Interfaces.dll
+D:\GITHUB\m.transport\common\m.transport.Interfaces\bin\Debug\m.transport.Interfaces.pdb
+D:\GITHUB\m.transport\common\m.transport.Interfaces\obj\Debug\m.transport.Interfaces.csproj.AssemblyReference.cache
+D:\GITHUB\m.transport\common\m.transport.Interfaces\obj\Debug\m.transport.Interfaces.csproj.CoreCompileInputs.cache
+D:\GITHUB\m.transport\common\m.transport.Interfaces\obj\Debug\m.transport.Interfaces.dll
+D:\GITHUB\m.transport\common\m.transport.Interfaces\obj\Debug\m.transport.Interfaces.pdb
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.Interfaces\bin\Debug\m.transport.Interfaces.dll
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.Interfaces\bin\Debug\m.transport.Interfaces.pdb
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.Interfaces\obj\Debug\m.transport.Interfaces.csproj.AssemblyReference.cache
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.Interfaces\obj\Debug\m.transport.Interfaces.csproj.CoreCompileInputs.cache
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.Interfaces\obj\Debug\m.transport.Interfaces.dll
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.Interfaces\obj\Debug\m.transport.Interfaces.pdb

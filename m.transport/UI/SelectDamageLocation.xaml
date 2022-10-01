@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+		xmlns:l="clr-namespace:m.transport"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="m.transport.SelectDamageLocation" Title="General Damage Location">
+    <ContentPage.Content>
+        <RelativeLayout x:Name="MyLayout" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="{StaticResource PrimaryBackground}">
+            <Image Source="dmg_diagram.png" x:Name="PortraitImage" BackgroundColor="{StaticResource TransparentBackground}"
+                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                RelativeLayout.WidthConstraint="{ConstraintExpression
+                    Type=RelativeToParent,Property=Width,Factor=1,Constant=0}"
+                RelativeLayout.HeightConstraint="{ConstraintExpression
+                    Type=RelativeToParent,Property=Height,Factor=.8,Constant=0}" />
+
+            <Image Source="dmg_diagram_landscape.png" x:Name="LandscapeImage" BackgroundColor="{StaticResource TransparentBackground}"
+                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                RelativeLayout.WidthConstraint="{ConstraintExpression
+                    Type=RelativeToParent,Property=Width,Factor=1,Constant=0}"
+                RelativeLayout.HeightConstraint="{ConstraintExpression
+                    Type=RelativeToParent,Property=Height,Factor=.8,Constant=0}" />
+
+            <StackLayout
+                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+                <StackLayout BackgroundColor="{StaticResource PrimaryBackground}" VerticalOptions="EndAndExpand" x:Name="CodeLayout" Padding="10">
+                    <Label FontSize="Small" x:Name="CodePreview" Text=" " />
+                    <StackLayout BackgroundColor="{StaticResource PrimaryBackground}" Orientation="Horizontal">
+                        <Label BackgroundColor="{StaticResource PrimaryBackground}" VerticalOptions="Center" Text="Code"/>
+                        <Entry x:Name="DamageCode"
+                            TextColor="{StaticResource DarkestText}" BackgroundColor="{StaticResource WhiteBackground}"
+                            TextChanged="CodeUpdated" Focused="EntryFocus" Unfocused="EntryUnfocus" Keyboard="Numeric" HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

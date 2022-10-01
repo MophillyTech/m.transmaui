@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<l:ExtendedViewCell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+			 xmlns:l="clr-namespace:m.transport"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="m.transport.VehiclePickupCell">
+	<StackLayout x:Name="OverallLayout" BackgroundColor="{StaticResource PrimaryBackground}" Orientation="Horizontal" Padding="0,0,0,0">
+		<BoxView x:Name="ColorBox" Color="{Binding Status,Converter={StaticResource statusToPickup}}" WidthRequest="20" />
+		<StackLayout HorizontalOptions="FillAndExpand" Orientation="Vertical">
+			<StackLayout Orientation="Horizontal">
+				<Label StyleId="vehicleVIN" LineBreakMode="HeadTruncation" x:Name="VIN" Text="{Binding VIN8}"
+						WidthRequest="90" MinimumWidthRequest="90" FontSize="Medium" FontAttributes="Bold"
+						TextColor="{StaticResource DarkestText}"/>
+				<Label x:Name="Priority" Text="{Binding PriorityLabel}" IsVisible="true"
+						VerticalOptions="Center" WidthRequest="10" MinimumWidthRequest="10" FontSize="Small"  FontAttributes="Bold" 
+						TextColor="Red" />
+				<Label x:Name="Location" Text="{Binding DatsVehicle.BayLocation}"
+						VerticalOptions="Center" WidthRequest="65" MinimumWidthRequest="65" FontSize="Small"
+						TextColor="{StaticResource DarkestText}"/>
+				<Label x:Name="Status" Text="{Binding DatsVehicle.VehicleStatus}"
+						VerticalOptions="Center" WidthRequest="60" MinimumWidthRequest="60" FontSize="Small" 
+						TextColor="{StaticResource DarkestText}"/>
+				<Label x:Name="Damage" Text="{Binding DatsVehicle.PreExisitingString}" WidthRequest="10" MinimumWidthRequest="10"
+						VerticalOptions="Center" FontSize="Small"
+						TextColor="{StaticResource ErrorText}" 
+						IsVisible="true" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Label x:Name="Year" FontSize="Small" Text="{Binding DatsVehicle.VehicleYear}"
+						TextColor="{StaticResource DarkestText}"/>
+				<Label x:Name="Make" FontSize="Small" Text="{Binding DatsVehicle.Make}"
+						TextColor="{StaticResource DarkestText}"/>
+				<Label x:Name="Model" FontSize="Small" Text="{Binding DatsVehicle.Model}"
+						TextColor="{StaticResource DarkestText}"/>
+				<Label x:Name="Color" FontSize="Small" Text="{Binding DatsVehicle.Color}"
+						TextColor="{StaticResource DarkestText}"/>
+			</StackLayout>
+			<Label x:Name="Comment" FontSize="Small" TextColor="{StaticResource ErrorText}" Text="{Binding Comment}"/>
+			<StackLayout BackgroundColor="{StaticResource PrimaryBackground}" Padding="0,0,0,0" Orientation="Horizontal">
+				<Image x:Name="DamagePhotoImage" IsVisible="{Binding HasLoadingDamagePhoto}" StyleId="photo" MinimumHeightRequest="36" HeightRequest="36" MinimumWidthRequest="36" WidthRequest="36"
+					Source="camera.png" VerticalOptions="Center"/>
+				<l:ItemsStackLayout BackgroundColor="{StaticResource PrimaryBackground}" x:Name="ItemStack" VerticalOptions="Center"
+					ItemsSource="{Binding LoadingDamageList}">
+					<l:ItemsStackLayout.ItemTemplate>
+						<DataTemplate>
+							<Label FontSize="10" LineBreakMode="TailTruncation" Text="{Binding Summary}" TextColor="{StaticResource DarkestText}" VerticalOptions="Center"/>
+						</DataTemplate>
+					</l:ItemsStackLayout.ItemTemplate>
+				</l:ItemsStackLayout>
+			</StackLayout>
+		</StackLayout>
+		<Image Source="disclosure.png" MinimumWidthRequest="20" WidthRequest="20"
+			HorizontalOptions="Center" VerticalOptions="Center" />
+	</StackLayout>
+</l:ExtendedViewCell>

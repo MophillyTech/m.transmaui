@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+		xmlns:local="clr-namespace:m.transport"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="m.transport.About" Title="About">
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Text="OK" IconImageSource="" Clicked="OnActivated" />
+	</ContentPage.ToolbarItems>
+
+    <StackLayout BackgroundColor="{StaticResource PrimaryBackground}" VerticalOptions="FillAndExpand">
+		<ScrollView >
+			<StackLayout Orientation="Vertical" Padding="20,10,20,10">
+	
+				<Image Source="AutoLynxBite2.png" />
+
+				<StackLayout Padding="0,15,0,0">
+					<Label Text="GPS cord" FontSize="Medium" FontAttributes="Bold" HeightRequest="20" TextColor="{StaticResource BlueText}"/>
+					<Label x:Name="coordinate" Text="{Binding GPS}" FontSize="Small" TextColor="{StaticResource DisabledText}"/>
+				</StackLayout>
+
+				<StackLayout Padding="0,15,0,0">
+                    <Label Text="App Version" FontSize="Medium" FontAttributes="Bold" HeightRequest="20" TextColor="{StaticResource BlueText}"/>
+					<Label x:Name="appVersion" FontSize="Small" TextColor="{StaticResource DisabledText}"/>
+				</StackLayout>
+
+				<StackLayout Padding="0,15,0,0">
+                    <Label Text="OS Version" FontSize="Medium" FontAttributes="Bold"  HeightRequest="20" TextColor="{StaticResource BlueText}"/>
+					<Label x:Name="osVersion" FontSize="Small" TextColor="{StaticResource DisabledText}"/>
+				</StackLayout>
+
+				<StackLayout Padding="0,15,0,0">
+                    <Label Text="Bundle ID" FontSize="Medium" FontAttributes="Bold"  HeightRequest="20" TextColor="{StaticResource BlueText}"/>
+					<Label x:Name="bundleID" FontSize="Small" TextColor="{StaticResource DisabledText}"/>
+				</StackLayout>
+
+				<StackLayout Padding="0,15,0,0">
+					<Label Text="Dispatcher" FontSize="Medium" FontAttributes="Bold"  HeightRequest="20" TextColor="{StaticResource BlueText}"/>
+					<Label Text="{Binding Dispatcher}" FontSize="Small" TextColor="{StaticResource DisabledText}"/>
+				</StackLayout>
+
+				<StackLayout Padding="0,15,0,0">
+					<Label Text="WebService URL" FontSize="Medium" FontAttributes="Bold"  HeightRequest="20" TextColor="{StaticResource BlueText}"/>
+					<Label Text="{Binding WebServiceUrl}" FontSize="Small" TextColor="{StaticResource DisabledText}"/>
+				</StackLayout>
+
+				<StackLayout Padding="0,15,0,0">
+					<Label Text="Driver Name" FontSize="Medium" FontAttributes="Bold"  HeightRequest="20" TextColor="{StaticResource BlueText}"/>
+					<Label Text="{Binding User}" FontSize="Small" TextColor="{StaticResource DisabledText}"/>
+					<Label Text="{Binding FullName}" FontSize="Small" TextColor="{StaticResource DisabledText}"/>
+
+				</StackLayout>
+					
+				<StackLayout Padding="0,15,0,0">
+					<Label Text="Truck Number" FontSize="Medium" FontAttributes="Bold"  HeightRequest="20" TextColor="{StaticResource BlueText}"/>
+					<Label Text="{Binding Truck}" FontSize="Small" TextColor="{StaticResource DisabledText}"/>
+				</StackLayout>
+					
+				<StackLayout Padding="0,15,0,0">
+					<Label Text="Truck Mileage" FontSize="Medium" FontAttributes="Bold"  HeightRequest="20" TextColor="{StaticResource BlueText}"/>
+					<Label Text="{Binding Mileage}" FontSize="Small" TextColor="{StaticResource DisabledText}"/>
+				</StackLayout>
+			</StackLayout>
+		</ScrollView>
+
+		<Label Text="{Binding Copyright}" TextColor="{StaticResource DisabledText}" FontSize="Small" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+
+	</StackLayout>	
+</ContentPage>

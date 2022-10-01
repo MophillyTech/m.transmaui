@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="View Log" xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="m.transport.ViewLog">
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Text="Done" Activated="CloseDialog" />
+	</ContentPage.ToolbarItems>
+	<ContentPage.Content>
+		<StackLayout>
+			<Editor IsEnabled="false" x:Name="LogData" VerticalOptions="FillAndExpand" />
+			<StackLayout HorizontalOptions="Center" Orientation="Horizontal" VerticalOptions="End">
+				<Button Text="Clear Log" Clicked="ClearLog"></Button>
+				<Button Text="Copy Log" Clicked="CopyLog"></Button>
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

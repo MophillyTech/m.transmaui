@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+		xmlns:l="clr-namespace:m.transport"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="m.transport.DamageCell">
+	<StackLayout Padding="0,0,5,0" BackgroundColor="{StaticResource PrimaryBackground}" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Orientation="Horizontal">
+		<StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+			<StackLayout Padding="20,0,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+				<Label StyleId="summary" x:Name="Summary" Text="{Binding Summary}" FontSize="12"
+	 			TextColor="{StaticResource DarkestText}" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+			</StackLayout>
+			<StackLayout x:Name="RowLayout" Orientation="Horizontal" IsVisible="{Binding IsDeletable}" >
+				<Image x:Name="CameraButton" Source="camera.png" StyleId="photo" MinimumHeightRequest="36" HeightRequest="36" MinimumWidthRequest="36" WidthRequest="36"
+					VerticalOptions="Center" BackgroundColor="{StaticResource TransparentBackground}"/>
+				<StackLayout x:Name="ReasonLayout" VerticalOptions="Center">
+					<l:TappedLabel StyleId="reason"  x:Name="Reason" IsVisible="{Binding ShowReason}" Text="{Binding PhotoReason}" FontSize="12"
+					TextColor="{StaticResource DarkestText}" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+				</StackLayout>
+				<ScrollView Orientation="Horizontal" HorizontalOptions="FillAndExpand" x:Name="PhotoView" IsVisible="{Binding ShowPhoto}">
+					<l:ItemsStackLayout Title="{Binding DamageCode}" HorizontalOptions="FillAndExpand"  Orientation="Horizontal" BackgroundColor="{StaticResource PrimaryBackground}" x:Name="PhtotStack"
+						ItemsSource="{Binding Photos}">
+							<l:ItemsStackLayout.ItemTemplate>
+								<DataTemplate>
+									<l:DmgImage Source="{Binding ThumbnailPath}" MinimumWidthRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center" />
+								</DataTemplate>
+							</l:ItemsStackLayout.ItemTemplate>
+					</l:ItemsStackLayout>
+				</ScrollView>
+			</StackLayout>
+		</StackLayout>
+		<Image x:Name="Trash" StyleId="delete" Source="trash2.png" HorizontalOptions="Center" VerticalOptions="Center"
+				BackgroundColor="{StaticResource TransparentBackground}" IsVisible="{Binding IsDeletable}" />
+	</StackLayout>
+</ViewCell>

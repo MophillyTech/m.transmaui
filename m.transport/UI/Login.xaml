@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+		xmlns:l="clr-namespace:m.transport" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="m.transport.Login" Title="Vehicle Mobile Application">
+	<ScrollView>
+	<StackLayout BackgroundColor="{StaticResource PrimaryBackground}" Padding="20,50">
+		<l:ExtendedEntry Align="left" x:Name="username" StyleId="username" Placeholder="Username" Text="{Binding Username}" HintTextColor="{StaticResource HintText}"
+				TextColor="{StaticResource DarkestText}" BackgroundColor="{StaticResource WhiteBackground}" />
+		<l:ExtendedEntry Align="left" x:Name="password" StyleId="password" Placeholder="Password" Text="{Binding Password}" HintTextColor="{StaticResource HintText}" IsPassword="true"
+				TextColor="{StaticResource DarkestText}" BackgroundColor="{StaticResource WhiteBackground}" />
+		<l:ExtendedEntry Align="left" x:Name="truck" StyleId="truck" Placeholder="Truck" Text="{Binding Truck}" HintTextColor="{StaticResource HintText}"
+				TextColor="{StaticResource DarkestText}" BackgroundColor="{StaticResource WhiteBackground}" />
+		<StackLayout x:Name="Dispatch" Orientation="Horizontal">
+			<Label VerticalOptions="Center" Text="Dispatcher" 
+						TextColor="{StaticResource DarkestText}" />
+			<Button HorizontalOptions="FillAndExpand" Text="" x:Name="Code" Clicked="OnShowDispatchAction"
+					TextColor="{StaticResource DarkestText}" BackgroundColor="{StaticResource WhiteBackground}" />
+		</StackLayout>
+		<StackLayout x:Name="DispatchCode" Orientation="Horizontal">
+			<Label VerticalOptions="Center" Text="Dispatcher Code" 
+						TextColor="{StaticResource DarkestText}" />
+			<Entry StyleId="dispatcher" HorizontalOptions="FillAndExpand" x:Name="Dispatcher" Text="{Binding DispatchCode}"
+					TextColor="{StaticResource DarkestText}" BackgroundColor="{StaticResource WhiteBackground}" />
+		</StackLayout>
+		<Label StyleId="login_error" Text="{Binding Error}" 
+					TextColor="{StaticResource ErrorText}" IsVisible="{Binding IsLoginFailed}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+		<Button StyleId="login" Text="Login" Clicked="OnLogin"
+				BackgroundColor="{StaticResource DefaultButtonBackground}" TextColor="{StaticResource DefaultButtonText}" />
+		<Button StyleId="demo" Text="Demo Mode" Clicked="OnLoginDemo" 
+				BackgroundColor="{StaticResource DefaultButtonBackground}" TextColor="{StaticResource DefaultButtonText}"/>
+		<Button StyleId="adddispatch" x:Name="AddDispatch" Text="Add Dispatcher" Clicked="OnAddDispatch" 
+				BackgroundColor="{StaticResource DefaultButtonBackground}" TextColor="{StaticResource DefaultButtonText}"/>
+
+		<Label x:Name="versionInfo" StyleId="small_text" Text="{Binding VersionInfo}" HorizontalOptions="Center" FontSize="16" 
+					TextColor="{StaticResource BlueText}" />
+	</StackLayout>
+	</ScrollView>
+</ContentPage>

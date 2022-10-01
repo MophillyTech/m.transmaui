@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MR.Gestures.Android</name>
+    </assembly>
+    <members>
+        <member name="M:MR.Gestures.Android.AndroidGestureHandler.AddGestureRecognizers(MR.Gestures.IGestureAwareControl,Android.Views.View)">
+            <summary>
+            Adds the gesture recognizers to a View. Must be called from the Cell renderers GetCellCore method.
+            </summary>
+            <param name="element"></param>
+            <param name="view"></param>
+        </member>
+        <member name="M:MR.Gestures.Android.AndroidGestureHandler.RemoveInstance(MR.Gestures.IGestureAwareControl)">
+            <summary>
+            Removes the gesture recognizers for the given IGestureAwareControl. Called from a Views Dispose method.
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:MR.Gestures.Android.AndroidGestureHandler.OnElementChanged(MR.Gestures.IGestureAwareControl,MR.Gestures.IGestureAwareControl,Android.Views.View)">
+            <summary>
+            Called from a View renderers OnElementChanged method.
+            </summary>
+            <param name="oldElement"></param>
+            <param name="newElement"></param>
+            <param name="view"></param>
+        </member>
+        <member name="M:MR.Gestures.Android.AndroidGestureHandler.OnElementPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs,Android.Views.View)">
+            <summary>
+            Called from a View renderers OnElementPropertyChanged method. (not used on Android currently, but maybe in the future)
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+            <param name="renderer"></param>
+        </member>
+        <member name="M:MR.Gestures.Android.AndroidGestureHandler.HandleMotionEvent(MR.Gestures.IGestureAwareControl,Android.Views.MotionEvent)">
+            <summary>
+            Is called from the renderers DispatchTouchEvent method.
+            </summary>
+            <param name="element"></param>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MR.Gestures.Android.DIP">
+            <summary>
+            Calculator to help calculate Device Independant Pixels to real pixels.
+            </summary>
+        </member>
+        <member name="P:MR.Gestures.Android.Settings.LicenseKey">
+            <summary>
+            Set the LicenseKey to the key you got when you purchased a license for this app. The license key varies with the app name.
+            </summary>
+        </member>
+        <member name="P:MR.Gestures.Android.Settings.SwipeVelocityThreshold">
+            <summary>
+            The velocity of a lifted finger relative to the ScaledMaximumFlingVelocity must be at least this value to count as Swipe.
+            The default value is 0.1. Set it to a higher value if you want the user to move faster.
+            </summary>
+            <remarks>The value must be between 0.0 and 1.0.</remarks>
+        </member>
+    </members>
+</doc>

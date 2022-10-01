@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+		xmlns:l="clr-namespace:m.transport"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="m.transport.SelectLocationCellContent">
+	<Label FontSize="Medium" TextColor="{StaticResource DarkestText}" Text="{Binding DisplayName}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+</ContentView>

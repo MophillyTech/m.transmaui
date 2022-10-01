@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+		xmlns:l="clr-namespace:m.transport"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="m.transport.ManageExceptions" BackgroundColor="{StaticResource PrimaryBackground}">
+	<ContentPage.Content>
+		<StackLayout>
+			<ListView x:Name="ExceptionList" ItemsSource="{Binding ExceptionVehicles}" HasUnevenRows="true"
+					BackgroundColor="{StaticResource PrimaryBackground}">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<l:ManageExceptionCell AllowNull="{Binding IsPickup}" />
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

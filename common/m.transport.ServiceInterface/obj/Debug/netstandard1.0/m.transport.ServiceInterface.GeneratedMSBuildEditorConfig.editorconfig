@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = m.transport.ServiceInterface
+build_property.ProjectDir = D:\Projects\MAUI_Migrate\m.transport\common\m.transport.ServiceInterface\

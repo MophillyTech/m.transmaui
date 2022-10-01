@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+		xmlns:l="clr-namespace:m.transport"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="m.transport.ManageDelivery" Title="Manage Delivery">
+	<ContentPage.Content>
+		<ScrollView BackgroundColor="{StaticResource PrimaryBackground}">
+			<StackLayout>
+				<StackLayout BackgroundColor="{StaticResource BlackBackground}" Orientation="Horizontal">
+					<Label TextColor="{StaticResource LightestText}" VerticalOptions="Center" Text="Delivering to: " />
+					<Label x:Name="SelectedLocationLabel" TextColor="{StaticResource LightestText}" VerticalOptions="Center" Text="" />
+				</StackLayout>
+				<ListView x:Name="VehicleList" BackgroundColor="{StaticResource PrimaryBackground}" ItemTapped="SelectVehicle" />
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

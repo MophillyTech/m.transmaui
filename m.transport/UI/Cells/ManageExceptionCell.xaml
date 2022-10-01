@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+		xmlns:l="clr-namespace:m.transport"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="m.transport.ManageExceptionCell">
+	<StackLayout Padding="10,10,10,10" BackgroundColor="{StaticResource PrimaryBackground}" >
+		<Label StyleId="exception" FontSize="Bold,Large" HorizontalOptions="FillAndExpand" x:Name="Exception" Text="{Binding Vehicle.VIN}" />
+		<Label StyleId="message" HorizontalOptions="FillAndExpand" x:Name="Message" Text="{Binding Vehicle.DatsVehicle.ExceptionMessage}" FontSize="Small" />
+		<Label StyleId="prompt" x:Name="Prompt" Text="{Binding ExceptionPrompt}" FontSize="Medium" />
+		<l:SegmentControl x:Name="Toggle" AllowNull="false">
+			<l:ToggleButton Text="No" BackgroundColor="{StaticResource RedBackground}" 
+				TextColor="{StaticResource LightestText}" HorizontalOptions="FillAndExpand"/>
+			<l:ToggleButton Text="Yes" BackgroundColor="{StaticResource GreenBackground}" 
+				TextColor="{StaticResource LightestText}" HorizontalOptions="FillAndExpand"/>
+		</l:SegmentControl>
+	</StackLayout>
+</ViewCell>

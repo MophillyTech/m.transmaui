@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+		 xmlns:l="clr-namespace:m.transport"
+		 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		 x:Class="m.transport.SelectDeliverVehicleCellContent">
+	<StackLayout BackgroundColor="{StaticResource PrimaryBackground}" Orientation="Horizontal">
+		<Image Source="{Binding Selected,Converter={StaticResource selectedToDarkCheck}}" WidthRequest="25" />
+		<StackLayout Padding="0,0,10,0">
+			<StackLayout Orientation="Horizontal" >
+				<Label x:Name="VIN" TextColor="{StaticResource DarkestText}" WidthRequest="150"  FontSize="Medium"  FontAttributes="Bold" Text="{Binding VIN8}"></Label>
+				<Label x:Name="Status" TextColor="{StaticResource DarkestText}" VerticalOptions="Center" WidthRequest="150"  FontSize="Small" Text="{Binding DatsVehicle.VehicleStatus}"></Label>
+				<Label x:Name="Damage" VerticalOptions="Center" FontSize="Small" TextColor="{StaticResource ErrorText}" Text="D" IsVisible="{Binding HasDeliveryDamage}"></Label>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Label x:Name="Year" TextColor="{StaticResource DarkestText}" FontSize="Small" Text="{Binding DatsVehicle.VehicleYear}"></Label>
+				<Label x:Name="Make" TextColor="{StaticResource DarkestText}" FontSize="Small" Text="{Binding DatsVehicle.Make}"></Label>
+				<Label x:Name="Model" TextColor="{StaticResource DarkestText}" FontSize="Small" Text="{Binding DatsVehicle.Model}"></Label>
+				<Label x:Name="Color" TextColor="{StaticResource DarkestText}" FontSize="Small" Text="{Binding DatsVehicle.Color}"></Label>
+			</StackLayout>
+			<StackLayout Padding="0,0,0,0" Orientation="Horizontal">
+				<Image IsVisible="{Binding HasDeliveringDamagePhoto}" StyleId="photo" MinimumHeightRequest="36" HeightRequest="36" MinimumWidthRequest="36" WidthRequest="36"
+					Source="camera.png" VerticalOptions="Center"/>
+				<l:ItemsStackLayout BackgroundColor="{StaticResource PrimaryBackground}" VerticalOptions="Center"
+					ItemsSource="{Binding DeliveryDamageList}">
+					<l:ItemsStackLayout.ItemTemplate>
+						<DataTemplate>
+							<Label FontSize="10" LineBreakMode="TailTruncation"  Text="{Binding Summary}" TextColor="{StaticResource DarkestText}" />
+						</DataTemplate>
+					</l:ItemsStackLayout.ItemTemplate>
+				</l:ItemsStackLayout>
+			</StackLayout>
+		</StackLayout>
+	</StackLayout>
+</ContentView>

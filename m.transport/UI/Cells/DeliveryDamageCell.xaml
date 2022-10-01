@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+			 xmlns:l="clr-namespace:m.transport"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="m.transport.DeliveryDamageCellContent">
+	<Grid BackgroundColor="{StaticResource PrimaryBackground}">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="20" />
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="40" />
+			<ColumnDefinition Width="Auto" />
+			<ColumnDefinition Width="5" />
+		</Grid.ColumnDefinitions>
+		<BoxView Color="Red" WidthRequest="20" Grid.Column="0" />
+		<StackLayout Grid.Column="1" >
+			<StackLayout Orientation="Horizontal">
+				<Label TextColor="{StaticResource DarkestText}" WidthRequest="110" MinimumWidthRequest="110" x:Name="VIN" FontSize="Medium"  FontAttributes="Bold" Text="{Binding VIN8}"></Label>
+				<Label TextColor="{StaticResource DarkestText}" VerticalOptions="Center" WidthRequest="110" MinimumWidthRequest="110" x:Name="Status" FontSize="Small" Text="Delivering"></Label>
+				<Label x:Name="Damage" VerticalOptions="Center" FontSize="Small" TextColor="{StaticResource ErrorText}" Text="D" IsVisible="{Binding HasDeliveryDamage}"></Label>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Label x:Name="Year" TextColor="{StaticResource DarkestText}" FontSize="Small" Text="{Binding DatsVehicle.VehicleYear}"></Label>
+				<Label x:Name="Make" TextColor="{StaticResource DarkestText}" FontSize="Small" Text="{Binding DatsVehicle.Make}"></Label>
+				<Label x:Name="Model" TextColor="{StaticResource DarkestText}" FontSize="Small" Text="{Binding DatsVehicle.Model}"></Label>
+				<Label x:Name="Color" TextColor="{StaticResource DarkestText}" FontSize="Small" Text="{Binding DatsVehicle.Color}"></Label>
+			</StackLayout>
+			<Label x:Name="Comment" MinimumHeightRequest="200" TextColor="{StaticResource DarkestText}" FontSize="Small" Text="{Binding DatsVehicle.DropOffInspectionNotes}" LineBreakMode="WordWrap"></Label>
+			<StackLayout BackgroundColor="{StaticResource PrimaryBackground}" Padding="0,0,0,0" Orientation="Horizontal">
+				<Image IsVisible="{Binding HasDeliveringDamagePhoto}" StyleId="photo" MinimumHeightRequest="36" HeightRequest="36" MinimumWidthRequest="36" WidthRequest="36"
+					Source="camera.png" VerticalOptions="Center"/>
+				<l:ItemsStackLayout BackgroundColor="{StaticResource PrimaryBackground}" ItemsSource="{Binding DeliveryDamageList}" VerticalOptions="Center">
+					<l:ItemsStackLayout.ItemTemplate>
+						<DataTemplate>
+							<Label FontSize="10" LineBreakMode="TailTruncation" Text="{Binding Summary}" TextColor="{StaticResource DarkestText}" VerticalOptions="Center"/>
+						</DataTemplate>
+					</l:ItemsStackLayout.ItemTemplate>
+				</l:ItemsStackLayout>
+			</StackLayout>
+		</StackLayout>
+		<l:CommentImage Grid.Column="2" Source="comment.png" MinimumWidthRequest="40"
+ 			HorizontalOptions="Center" VerticalOptions="Center" />
+		<Label x:Name="AddLabel" StyleId="addDamage" Text="Add" Grid.Column="3" FontSize="20"
+				MinimumHeightRequest="40" MinimumWidthRequest="40" HorizontalOptions="Center" VerticalOptions="Center"
+				BackgroundColor="{StaticResource TransparentBackground}" TextColor="{StaticResource DefaultButtonText}" />
+		<BoxView Color="{StaticResource PrimaryBackground}" Grid.Column="4" />
+	</Grid>
+</ContentView>

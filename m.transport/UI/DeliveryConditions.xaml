@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<l:ExtendedContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+		xmlns:l="clr-namespace:m.transport"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="m.transport.DeliveryConditions" Title="Delivery Conditions">
+	<ContentPage.Content>
+			<StackLayout BackgroundColor="{StaticResource PrimaryBackground}" Orientation="Vertical" VerticalOptions="FillAndExpand">
+				<StackLayout x:Name="DeliveryLayout" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <ScrollView>
+                            <StackLayout>
+                                    <StackLayout x:Name="DisplayLayout">
+                                        <StackLayout x:Name="AttendedLayout" Orientation="Horizontal" Padding="15,10,15,10">
+							                <Label HorizontalOptions="FillAndExpand" TextColor="{StaticResource DarkestText}" VerticalOptions="Center" Text="Attended?" />
+							                <l:CustomSwitch x:Name="Attended" Toggled="AttendedToggled" OffText="No" OnText="Yes"/>
+						                </StackLayout>
+                                	    <StackLayout x:Name="InspectionLayout" Orientation="Horizontal" Padding="15,0,15,10">
+							                <Label HorizontalOptions="FillAndExpand" TextColor="{StaticResource DarkestText}" VerticalOptions="Center" Text="Subject to Inspection?" />
+							                <l:CustomSwitch x:Name="Inspection" Toggled="InspectionToggled" OffText="No" OnText="Yes"/>
+						                </StackLayout>
+                                	    <StackLayout x:Name="SurveyStack"  Orientation="Vertical" Padding="15,0,10,10" IsVisible="{Binding ShowReason}">
+							            <StackLayout Orientation="Horizontal">
+								            <Button Text="Reason:" 
+									            BackgroundColor="{StaticResource HighlightBackground}" TextColor="{StaticResource DefaultButtonText}"
+									            WidthRequest="150" Clicked="SelectReason" />
+								            <Label HorizontalOptions="FillAndExpand" VerticalOptions="Center" x:Name="Reason"  />
+							            </StackLayout>
+							            <Label Text="Select a reason" FontSize="Small" TextColor="{StaticResource ErrorText}" IsVisible="{Binding MissingReason}"/>
+						                </StackLayout>
+                                       <StackLayout x:Name="SurveyLayout" IsVisible="false" Orientation="Horizontal" Padding="15,0,15,10">
+                                            <Label HorizontalOptions="FillAndExpand" TextColor="{StaticResource DarkestText}" VerticalOptions="Center" Text="Was there a safe unloading area?" />
+                                            <l:CustomSwitch x:Name="Survey" Toggled="SurveyToggled" OffText="No" OnText="Yes"/>
+                                        </StackLayout>
+                                        <StackLayout x:Name="ReasonLayout" Orientation="Vertical" Padding="15,0,10,10" IsVisible="{Binding ShowSurvey}">
+                                            <StackLayout Orientation="Horizontal">
+                                                <Button Text="Reason:" 
+                                                    BackgroundColor="{StaticResource HighlightBackground}" TextColor="{StaticResource DefaultButtonText}"
+                                                    WidthRequest="150" Clicked="SelectSurvey" />
+                                                <Label HorizontalOptions="FillAndExpand" VerticalOptions="Center" x:Name="Response"  />
+                                            </StackLayout>
+                                            <Label Text="Select a response" FontSize="Small" TextColor="{StaticResource ErrorText}" IsVisible="{Binding MissingSurvey}"/>
+                                        </StackLayout>
+                                        <StackLayout x:Name="SurveyCommentLayout" IsVisible="false" Padding="15,0,15,15">
+                                            <Label FontSize="Small" Text="Survey Comments" />
+                                            <Editor x:Name="SurveyComment" TextChanged="OnSurveyTextChanged" HeightRequest="120"
+                                                BackgroundColor="{StaticResource WhiteBackground}" Text="{Binding DeliveryInfo.Survey}"
+                                                Keyboard="Text" HorizontalOptions="FillAndExpand" Focused="SurveyEntryFocus" />
+                                        </StackLayout>
+						                <StackLayout x:Name="DropoffLocation" Orientation="Vertical" Padding="15,0,15,10" IsVisible="{Binding DropLocationVisible}">
+							                <StackLayout Orientation="Horizontal" >
+								                <Label VerticalTextAlignment="Center" VerticalOptions="Center" Text="Drop Location" MinimumWidthRequest="100" WidthRequest="100"
+									                TextColor="{StaticResource DarkestText}" />
+								                <l:ExtendedEntry x:Name="DropoffLocationEntry"  Align="Left" HeightRequest="40" StyleId="DropLoc" HorizontalOptions="FillAndExpand" Text="{Binding DeliveryInfo.DropLocation}"
+									                TextColor="{StaticResource DarkestText}" BackgroundColor="{StaticResource WhiteBackground}" IsEnabled="{Binding DropLocationEnabled}" />
+							                </StackLayout>
+							                <Label x:Name="LocationError" FontSize="Small" TextColor="{StaticResource ErrorText}" IsVisible="{Binding MissingLocation}"/>
+						                </StackLayout>
+						                <StackLayout x:Name="ReloadSwitch" Orientation="Horizontal" Padding="15,0,15,10" IsVisible="{Binding ReloadEnabled}">
+							                <Label HorizontalOptions="FillAndExpand" TextColor="{StaticResource DarkestText}" VerticalOptions="Center" Text="Reload?" />
+							                <l:CustomSwitch x:Name="Reload" Toggled="ReloadToggled" OffText="No" OnText="Yes"/>
+						                </StackLayout>
+                                    </StackLayout>
+                                <ListView x:Name="VehicleList" IsVisible="false" BackgroundColor="{StaticResource PrimaryBackground}" ItemTapped="SelectVehicle"/>
+                            </StackLayout>
+                        </ScrollView>
+				</StackLayout>
+				<StackLayout x:Name="CommentLayout" Padding="15,0,15,15">
+					<Label FontSize="Small" x:Name="CodePreview" Text="Delivery Comments" />
+					<Editor x:Name="Comment" TextChanged="OnTextChanged" HeightRequest="120"
+						BackgroundColor="{StaticResource WhiteBackground}" Text="{Binding DeliveryInfo.Comment}"
+						Keyboard="Text" HorizontalOptions="FillAndExpand" Focused="EntryFocus" />
+				</StackLayout>
+			</StackLayout>
+	</ContentPage.Content>
+</l:ExtendedContentPage>

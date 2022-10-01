@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MR.Gestures.UWP</name>
+    </assembly>
+    <members>
+        <member name="M:MR.Gestures.UWP.Renderers.DependencyObjectExtensions.FindChild``1(Windows.UI.Xaml.DependencyObject,System.String)">
+            <summary>
+            Find any child of type T and Name childname.
+            Searches down the tree first and then the siblings.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="parent"></param>
+            <param name="childName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MR.Gestures.UWP.Renderers.DependencyObjectExtensions.FindAllChildren``1(Windows.UI.Xaml.DependencyObject,System.Int32)">
+            <summary>
+            Finds all children of type T.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="parent"></param>
+            <param name="depth"></param>
+            <returns></returns>
+        </member>
+        <member name="P:MR.Gestures.UWP.Settings.LicenseKey">
+            <summary>
+            Set the LicenseKey to the key you got when you purchased a license for this app. The license key varies with the app name.
+            </summary>
+        </member>
+        <member name="P:MR.Gestures.UWP.Settings.SwipeVelocityThreshold">
+            <summary>
+            The velocity of a lifted finger must be at least this value to count as Swipe.
+            The velocity comes from ManipulationCompletedRoutedEventArgs.Velocities.Linear and is in device-independent pixel per millisecond.
+            The default value is 1. Set it to a higher value if you want the user to move faster.
+            </summary>
+        </member>
+    </members>
+</doc>

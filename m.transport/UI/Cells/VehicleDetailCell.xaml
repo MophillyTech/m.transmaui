@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+			 xmlns:l="clr-namespace:m.transport"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="m.transport.VehicleDetailCell">
+	<StackLayout x:Name="OverallLayout" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource PrimaryBackground}" Orientation="Vertical" Padding="20,0,20,0">
+		<Label StyleId="vehicleVIN" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="{StaticResource BlueText}"  Text="{Binding Attribute}" FontSize="Medium"  FontAttributes="Bold"/>
+		<StackLayout Orientation="Horizontal" VerticalOptions="Center">
+			<Image IsVisible="{Binding HasDamagePhoto}" StyleId="photo" MinimumHeightRequest="36" HeightRequest="36" MinimumWidthRequest="36" WidthRequest="36"
+					Source="camera.png" VerticalOptions="Center"/>
+			<Label x:Name="Description" Text="{Binding Value}"
+				VerticalOptions="Center" HorizontalOptions="FillAndExpand" FontSize="Small" TextColor="{StaticResource DarkestText}"/>
+		</StackLayout>
+	</StackLayout>
+</ViewCell>	

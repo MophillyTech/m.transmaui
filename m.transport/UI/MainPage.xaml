@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+	xmlns:l="clr-namespace:m.transport"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="m.transport.MainPage" x:Name="main">
+    <FlyoutPage.Resources>
+		<ResourceDictionary>
+			<l:MenuSelectableToColorValueConverter x:Key="enableToColor" />
+		</ResourceDictionary>
+	</FlyoutPage.Resources>
+    <FlyoutPage.Flyout>
+        <ContentPage x:Name="slideout" StyleId="slideout" Title="Menu" IconImageSource="slideout.png">
+			<StackLayout BackgroundColor="{StaticResource DarkBackground}">
+				<ContentView Padding="10,36,0,5" BackgroundColor="{StaticResource DarkBackground}">
+					<Label Text="MENU" FontSize="Medium" TextColor="{StaticResource LightestText}"/>
+				</ContentView>
+					
+				<ListView BackgroundColor="{StaticResource DarkBackground}"  StyleId="menu" x:Name="Menu" ItemTapped="MenuClicked">
+					<ListView.ItemTemplate>
+						<DataTemplate>
+							<l:ExtendedTextCell Text="{Binding Title}"
+									TextColor="{Binding Enabled,Converter={StaticResource enableToColor}}" 
+									SelectColor="{StaticResource ReallyDarkBackground}" 
+									SeparatorColor="{StaticResource ReallyDarkBackground}" />
+						</DataTemplate>
+					</ListView.ItemTemplate>
+				</ListView>
+			</StackLayout>
+		</ContentPage>
+	</FlyoutPage.Flyout>
+    <FlyoutPage.Detail>
+	</FlyoutPage.Detail>
+</FlyoutPage>

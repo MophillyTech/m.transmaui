@@ -1,0 +1,3 @@
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.ServiceInterface\obj\Debug\netstandard1.0\m.transport.ServiceInterface.csproj.AssemblyReference.cache
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.ServiceInterface\obj\Debug\netstandard1.0\m.transport.ServiceInterface.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.ServiceInterface\obj\Debug\netstandard1.0\m.transport.ServiceInterface.csproj.CoreCompileInputs.cache

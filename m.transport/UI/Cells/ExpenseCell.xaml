@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<l:ExtendedViewCell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+		xmlns:l="clr-namespace:m.transport"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="m.transport.ExpenseCell">
+		<StackLayout x:Name="OverallLayout" BackgroundColor="{StaticResource PrimaryBackground}" Orientation="Vertical" Padding="0,0,0,0">
+			<BoxView Color="{StaticResource PrimaryBackground}" HeightRequest="5" />
+			<StackLayout Padding="5,0,0,5" BackgroundColor="{StaticResource WhiteBackground}" >
+				<Label MinimumHeightRequest="40" HeightRequest="40" VerticalOptions="Center" FontSize="Small"  Text="{Binding UnpaidExpense.ItemDescription}" TextColor="{StaticResource DarkestText}" />
+				<Label MinimumHeightRequest="20" HeightRequest="20" VerticalOptions="Center" FontSize="Small"  Text="{Binding UnpaidExpense.ItemDateToString}" TextColor="{StaticResource DarkestText}" />
+				<Label MinimumHeightRequest="20" HeightRequest="20" VerticalOptions="Center" FontSize="Small"  Text="{Binding AmountToString}" TextColor="{StaticResource DarkestText}" />
+				<Label MinimumHeightRequest="20" HeightRequest="20" VerticalOptions="Center" FontSize="Small"  FontAttributes="Bold" IsVisible="{Binding BackupReceivedIndicator}"  Text="Submit Paper Work" TextColor="{StaticResource RedBackground}" />
+			</StackLayout>
+			<BoxView Color="{StaticResource PrimaryBackground}" HeightRequest="5"/>
+		</StackLayout>
+</l:ExtendedViewCell>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DeviceInfo.Plugin</name>
+    </assembly>
+    <members>
+        <member name="T:DeviceInfo.Plugin.CrossDeviceInfo">
+            <summary>
+            Cross platform DeviceInfo implemenations
+            </summary>
+        </member>
+        <member name="P:DeviceInfo.Plugin.CrossDeviceInfo.Current">
+            <summary>
+            Current settings to use
+            </summary>
+        </member>
+        <member name="T:DeviceInfo.Plugin.DeviceInfoImplementation">
+            <summary>
+            Implementation for DeviceInfo
+            </summary>
+        </member>
+        <member name="M:DeviceInfo.Plugin.DeviceInfoImplementation.GenerateAppId(System.Boolean,System.String,System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="P:DeviceInfo.Plugin.DeviceInfoImplementation.Id">
+            <inheritdoc/>
+        </member>
+        <member name="P:DeviceInfo.Plugin.DeviceInfoImplementation.Model">
+            <inheritdoc/>
+        </member>
+        <member name="P:DeviceInfo.Plugin.DeviceInfoImplementation.Version">
+            <inheritdoc/>
+        </member>
+        <member name="P:DeviceInfo.Plugin.DeviceInfoImplementation.Platform">
+            <inheritdoc/>
+        </member>
+        <member name="P:DeviceInfo.Plugin.DeviceInfoImplementation.VersionNumber">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>

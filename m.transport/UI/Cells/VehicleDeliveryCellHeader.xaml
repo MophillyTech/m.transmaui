@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+		xmlns:l="clr-namespace:m.transport"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="m.transport.VehicleDeliveryCellHeader" Height="50">
+	
+		<StackLayout x:Name="Header" BackgroundColor="{StaticResource DarkBackground}" VerticalOptions="Center" Orientation="Horizontal" Padding="5,5,0,5">
+            <l:RoundedLabel x:Name="DropoffLabel" StyleId="load" Text="Unload" FontSize="24"
+                HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                CurvedBackgroundColor="{StaticResource DefaultButtonBackground}" 
+                TextColor="{StaticResource DefaultButtonText}"
+                MinimumWidthRequest="110" CurvedCornerRadius="4.0"/>
+			<Label TextColor="{StaticResource LightestText}" 
+				HorizontalOptions="FillAndExpand" VerticalOptions="Center" 
+				Text="{Binding Location.DisplayName}"/>
+            <Image Source="disclosure.png"
+                BackgroundColor="{StaticResource TransparentBackground}" 
+                MinimumWidthRequest="20" WidthRequest="20" 
+                HorizontalOptions="Center" VerticalOptions="Center" />
+		</StackLayout>
+	</ViewCell>

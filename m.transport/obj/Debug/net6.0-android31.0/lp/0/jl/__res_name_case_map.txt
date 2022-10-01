@@ -1,0 +1,2 @@
+Values/Strings.xml;values/strings.xml
+Layout/SignaturePad.axml;layout/signaturepad.xml

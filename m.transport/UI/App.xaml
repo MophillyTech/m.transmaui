@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+		xmlns:l="clr-namespace:m.transport"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="m.transport.App">
+	<Application.Resources>
+		<ResourceDictionary>
+
+			<l:VehicleStatusToColorValueConverter x:Key="statusToColor" />
+			<l:VehicleStatusToDeliveryColorValueConverter x:Key="statusToDelivery" />
+			<l:VehicleStatusToPickupColorValueConverter x:Key="statusToPickup" />
+			<l:SelectedToDarkCheckValueConverter x:Key="selectedToDarkCheck" />
+			<l:SelectedToWhiteCheckValueConverter x:Key="selectedToWhiteCheck" />
+
+			<Color x:FactoryMethod="FromHex" x:Key="TransparentBackground">
+				<x:Arguments>
+					<x:String>#00ffffff</x:String>
+				</x:Arguments>
+			</Color>
+			<Color x:FactoryMethod="FromHex" x:Key="PrimaryBackground">
+				<x:Arguments>
+					<x:String>#cae5ee</x:String>
+				</x:Arguments>
+			</Color>
+			<Color x:FactoryMethod="FromHex" x:Key="DarkBackground">
+				<x:Arguments>
+					<x:String>#0c4160</x:String>
+				</x:Arguments>
+			</Color>
+			<Color x:FactoryMethod="FromHex" x:Key="OtherDarkBackground">
+				<x:Arguments>
+					<x:String>#0c6041</x:String>
+				</x:Arguments>
+			</Color>
+			<Color x:FactoryMethod="FromHex" x:Key="ReallyDarkBackground">
+				<x:Arguments>
+					<x:String>#0b263b</x:String>
+				</x:Arguments>
+			</Color>
+			<Color x:FactoryMethod="FromHex" x:Key="HighlightBackground">
+				<x:Arguments>
+					<x:String>#00ff00</x:String>
+				</x:Arguments>
+			</Color>
+
+			<Color x:FactoryMethod="FromHex" x:Key="BlackBackground">
+				<x:Arguments>
+					<x:String>#000000</x:String>
+				</x:Arguments>
+			</Color>
+			<Color x:FactoryMethod="FromHex" x:Key="RedBackground">
+				<x:Arguments>
+					<x:String>#ff0000</x:String>
+				</x:Arguments>
+			</Color>
+			<Color x:FactoryMethod="FromHex" x:Key="GreenBackground">
+				<x:Arguments>
+					<x:String>#008000</x:String>
+				</x:Arguments>
+			</Color>
+			<Color x:FactoryMethod="FromHex" x:Key="BlueBackground">
+				<x:Arguments>
+					<x:String>#0000ff</x:String>
+				</x:Arguments>
+			</Color>
+			<Color x:FactoryMethod="FromHex" x:Key="WhiteBackground">
+				<x:Arguments>
+					<x:String>#ffffff</x:String>
+				</x:Arguments>
+			</Color>
+			<Color x:FactoryMethod="FromHex" x:Key="DefaultButtonBackground">
+				<x:Arguments>
+					<x:String>#ffffff</x:String>
+				</x:Arguments>
+			</Color>
+
+			<Color x:FactoryMethod="FromHex" x:Key="DefaultButtonText">
+				<x:Arguments>
+					<x:String>#0000ff</x:String>
+				</x:Arguments>
+			</Color>
+			<Color x:FactoryMethod="FromHex" x:Key="DarkestText">
+				<x:Arguments>
+					<x:String>#000000</x:String>
+				</x:Arguments>
+			</Color>
+			<Color x:FactoryMethod="FromHex" x:Key="DarkText">
+				<x:Arguments>
+					<x:String>#0c4160</x:String>
+				</x:Arguments>
+			</Color>
+			<Color x:FactoryMethod="FromHex" x:Key="LightestText">
+				<x:Arguments>
+					<x:String>#ffffff</x:String>
+				</x:Arguments>
+			</Color>
+			<Color x:FactoryMethod="FromHex" x:Key="HintText">
+				<x:Arguments>
+					<x:String>#C7C7CD</x:String>
+				</x:Arguments>
+			</Color>
+			<Color x:FactoryMethod="FromHex" x:Key="DisabledText">
+				<x:Arguments>
+					<x:String>#808080</x:String>
+				</x:Arguments>
+			</Color>
+			<Color x:FactoryMethod="FromHex" x:Key="ErrorText">
+				<x:Arguments>
+					<x:String>#ff0000</x:String>
+				</x:Arguments>
+			</Color>
+			<Color x:FactoryMethod="FromHex" x:Key="BlueText">
+				<x:Arguments>
+					<x:String>#0000ff</x:String>
+				</x:Arguments>
+			</Color>
+			<Color x:FactoryMethod="FromHex" x:Key="BlackText">
+				<x:Arguments>
+					<x:String>#000000</x:String>
+				</x:Arguments>
+			</Color>
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>

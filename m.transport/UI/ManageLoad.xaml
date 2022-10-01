@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+		xmlns:l="clr-namespace:m.transport"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="m.transport.ManageLoad" Title="Manage Pickup">
+	<StackLayout BackgroundColor="{StaticResource PrimaryBackground}">
+		<StackLayout BackgroundColor="{StaticResource PrimaryBackground}" HorizontalOptions="Center" Orientation="Horizontal">
+			<Label TextColor="{StaticResource DarkestText}" Text="VIN" VerticalOptions="Center" />
+			<Entry x:Name="VIN" WidthRequest="200"
+					TextColor="{StaticResource DarkestText}" BackgroundColor="{StaticResource WhiteBackground}" 
+					TextChanged="OnTextChanged"/>
+			<Button Text="Search" Clicked="SearchVIN" 
+					BackgroundColor="{StaticResource DefaultButtonBackground}" TextColor="{StaticResource DefaultButtonText}"/>
+		</StackLayout>
+		<StackLayout BackgroundColor="{StaticResource PrimaryBackground}" HorizontalOptions="Center" Orientation="Horizontal">
+			<Button Text="Scan" WidthRequest="150" Clicked="ScanVIN"
+					BackgroundColor="{StaticResource HighlightBackground}" TextColor="{StaticResource DefaultButtonText}"/>
+			<Button Text="Select" WidthRequest="100" Clicked="SelectVehicle" 
+					BackgroundColor="{StaticResource DefaultButtonBackground}" TextColor="{StaticResource DefaultButtonText}"/>
+		</StackLayout>
+		<ListView StyleId="vehicleList" x:Name="VehicleList" ItemsSource="{Binding VehiclesGrouped}"
+				BackgroundColor="{StaticResource PrimaryBackground}"></ListView>
+	</StackLayout>
+</ContentPage>

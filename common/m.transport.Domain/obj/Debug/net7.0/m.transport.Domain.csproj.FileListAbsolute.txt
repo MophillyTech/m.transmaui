@@ -1,0 +1,10 @@
+D:\Projects\MAUI_newTransportApp\m.transport\common\m.transport.Domain\obj\Debug\net7.0\m.transport.Domain.csproj.AssemblyReference.cache
+D:\Projects\MAUI_newTransportApp\m.transport\common\m.transport.Domain\obj\Debug\net7.0\m.transport.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\MAUI_newTransportApp\m.transport\common\m.transport.Domain\obj\Debug\net7.0\m.transport.Domain.csproj.CoreCompileInputs.cache
+D:\Projects\MAUI_newTransportApp\m.transport\common\m.transport.Domain\bin\Debug\net7.0\m.transport.Domain.deps.json
+D:\Projects\MAUI_newTransportApp\m.transport\common\m.transport.Domain\bin\Debug\net7.0\m.transport.Domain.dll
+D:\Projects\MAUI_newTransportApp\m.transport\common\m.transport.Domain\bin\Debug\net7.0\m.transport.Domain.pdb
+D:\Projects\MAUI_newTransportApp\m.transport\common\m.transport.Domain\obj\Debug\net7.0\m.transport.Domain.dll
+D:\Projects\MAUI_newTransportApp\m.transport\common\m.transport.Domain\obj\Debug\net7.0\refint\m.transport.Domain.dll
+D:\Projects\MAUI_newTransportApp\m.transport\common\m.transport.Domain\obj\Debug\net7.0\m.transport.Domain.pdb
+D:\Projects\MAUI_newTransportApp\m.transport\common\m.transport.Domain\obj\Debug\net7.0\ref\m.transport.Domain.dll

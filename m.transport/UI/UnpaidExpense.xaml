@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+		xmlns:l="clr-namespace:m.transport"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		xmlns:sys="clr-namespace:System;assembly=mscorlib"
+		x:Class="m.transport.UnpaidExpense" Title="Unpaid Expenses">
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Name="Done" Icon="" Activated="OnDone" />
+	</ContentPage.ToolbarItems>
+	<ContentPage.Content>
+		<StackLayout BackgroundColor="{StaticResource PrimaryBackground}" Padding="20,0" VerticalOptions="FillAndExpand">
+			<Label x:Name="ExpenseLabel" VerticalTextAlignment="Center" HeightRequest="40" VerticalOptions="Center" FontSize="Medium"  FontAttributes="Bold"
+				TextColor="{StaticResource DarkestText}"  />
+			<ListView BackgroundColor="{StaticResource PrimaryBackground}" ItemsSource="{Binding Expenses}"  VerticalOptions="FillAndExpand" x:Name="ExpenseList" HasUnevenRows="true" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

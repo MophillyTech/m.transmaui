@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+		xmlns:l="clr-namespace:m.transport"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="m.transport.EPOD" Title="EPOD">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout BackgroundColor="{StaticResource PrimaryBackground}" Padding="10">
+				<Label HorizontalOptions="Center" Text="Submit Delivery Receipt to:"></Label>
+				<Editor HorizontalOptions="Center" HeightRequest="35" WidthRequest="200" Text="test@test.com" />
+				<StackLayout Padding="10" HorizontalOptions="Center" Orientation="Horizontal">
+					<Label VerticalOptions="Center" Text="Send Chrysler EPOD?"></Label>
+					<Switch/>
+				</StackLayout>
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

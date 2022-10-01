@@ -1,0 +1,16 @@
+D:\GITHUB\m.transport\common\m.transport.Domain\bin\Debug\m.transport.Domain.dll
+D:\GITHUB\m.transport\common\m.transport.Domain\bin\Debug\m.transport.Domain.pdb
+D:\GITHUB\m.transport\common\m.transport.Domain\bin\Debug\SQLite.Net.dll
+D:\GITHUB\m.transport\common\m.transport.Domain\obj\Debug\m.transport.Domain.csproj.AssemblyReference.cache
+D:\GITHUB\m.transport\common\m.transport.Domain\obj\Debug\m.transport.Domain.csproj.CoreCompileInputs.cache
+D:\GITHUB\m.transport\common\m.transport.Domain\obj\Debug\m.transport.Domain.csproj.CopyComplete
+D:\GITHUB\m.transport\common\m.transport.Domain\obj\Debug\m.transport.Domain.dll
+D:\GITHUB\m.transport\common\m.transport.Domain\obj\Debug\m.transport.Domain.pdb
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.Domain\bin\Debug\m.transport.Domain.dll
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.Domain\bin\Debug\m.transport.Domain.pdb
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.Domain\bin\Debug\SQLite.Net.dll
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.Domain\obj\Debug\m.transport.Domain.csproj.AssemblyReference.cache
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.Domain\obj\Debug\m.transport.Domain.csproj.CoreCompileInputs.cache
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.Domain\obj\Debug\m.transport.Domain.csproj.CopyComplete
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.Domain\obj\Debug\m.transport.Domain.dll
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.Domain\obj\Debug\m.transport.Domain.pdb

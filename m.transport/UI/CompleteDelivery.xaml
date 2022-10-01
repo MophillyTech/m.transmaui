@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:ExtendedContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+		xmlns:l="clr-namespace:m.transport"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="m.transport.CompleteDelivery" Title="Complete Delivery">
+	<ContentPage.Content>
+		<StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource PrimaryBackground}">
+			<StackLayout>
+				<ListView x:Name="VehicleList" HeightRequest="200" HasUnevenRows="true" BackgroundColor="{StaticResource PrimaryBackground}"  />
+			</StackLayout>
+			<StackLayout x:Name="DetailLayout" VerticalOptions="EndAndExpand">
+				<ScrollView x:Name="BottomScroll">
+					<StackLayout>
+							<Label x:Name="Comment" FontSize="13" TextColor="{StaticResource DarkestText}" Text="{Binding Comment}" IsVisible="false"/>
+							<Label HeightRequest="35" x:Name="CustomerSignature" TextColor="{StaticResource DarkestText}" Text="Customer Signature" />
+							<Label HeightRequest="20" Text="Please sign" FontSize="Small" TextColor="{StaticResource ErrorText}" IsVisible="{Binding MissingCustomerSignature}"/>
+							<Image HeightRequest="75" x:Name="imgCustomerSignature" StyleId="imgCustomerSignature" BackgroundColor="{StaticResource WhiteBackground}"/>
+
+							<StackLayout Orientation="Horizontal">
+								<Label HeightRequest="35" TextColor="{StaticResource DarkestText}" Text="Customer Name" />
+								<l:ExtendedEntry Align="Left" HeightRequest="35"
+									AllCap="true" StyleId="customerName" VerticalOptions="Center" HorizontalOptions="FillAndExpand" x:Name="CustomerName" Text="{Binding CustomerName}" />
+							</StackLayout>
+
+							<Label HeightRequest="20" Text="{Binding CustomerError}" FontSize="Small" TextColor="{StaticResource ErrorText}" IsVisible="{Binding InvalidCustomerNameLength}"/>
+
+							<Label HeightRequest="35" TextColor="{StaticResource DarkestText}" Text="Driver Signature" />
+							<Label HeightRequest="20" Text="Please sign" FontSize="Small" TextColor="{StaticResource ErrorText}" IsVisible="{Binding MissingDriverSignature}"/>
+							<Image HeightRequest="75" x:Name="imgDriverSignature" StyleId="imgDriverSignature"  BackgroundColor="{StaticResource WhiteBackground}"/>
+
+							<StackLayout Orientation="Horizontal" HeightRequest="35" VerticalOptions="Center">
+								<Label HeightRequest="35" TextColor="{StaticResource DarkestText}" Text="Driver Name" />
+								<Label HeightRequest="35" TextColor="{StaticResource DarkestText}" VerticalOptions="Center" HorizontalOptions="FillAndExpand" x:Name="DriverName" Text="{Binding DriverFullName}" />
+							</StackLayout>
+					</StackLayout>
+				</ScrollView>
+			</StackLayout>
+		</StackLayout>
+
+
+
+		
+<!--		<StackLayout BackgroundColor="{StaticResource PrimaryBackground}" Orientation="Vertical">
+			<StackLayout BackgroundColor="{StaticResource PrimaryBackground}">
+				<ListView x:Name="VehicleList" BackgroundColor="{StaticResource PrimaryBackground}"  />
+			</StackLayout>
+
+			<ScrollView x:Name="BottomScroll">
+			<StackLayout VerticalOptions="FillAndExpand">
+				<Label HeightRequest="35" x:Name="CustomerSignature" TextColor="{StaticResource DarkestText}" Text="Customer Signature" />
+				<Label HeightRequest="20" Text="Please sign" FontSize="Small" TextColor="{StaticResource ErrorText}" IsVisible="{Binding MissingCustomerSignature}"/>
+				<Image HeightRequest="75" x:Name="imgCustomerSignature" StyleId="imgCustomerSignature" BackgroundColor="{StaticResource WhiteBackground}"/>
+
+				<StackLayout Orientation="Horizontal">
+					<Label HeightRequest="35" TextColor="{StaticResource DarkestText}" Text="Customer Name" />
+					<l:ExtendedEntry Align="Left" HeightRequest="35" AllCap="true" StyleId="customerName" VerticalOptions="Center" HorizontalOptions="FillAndExpand" x:Name="CustomerName" Text="{Binding CustomerName}" />
+				</StackLayout>
+
+				<Label HeightRequest="20" Text="{Binding CustomerError}" FontSize="Small" TextColor="{StaticResource ErrorText}" IsVisible="{Binding InvalidCustomerNameLength}"/>
+				<Label HeightRequest="20" Text="Please enter only letters, numbers and spaces" FontSize="Small" TextColor="{StaticResource ErrorText}" IsVisible="{Binding InvalidCustomerName}"/>
+
+				<Label HeightRequest="35" TextColor="{StaticResource DarkestText}" Text="Driver Signature" />
+				<Label HeightRequest="20" Text="Please sign" FontSize="Small" TextColor="{StaticResource ErrorText}" IsVisible="{Binding MissingDriverSignature}"/>
+				<Image HeightRequest="75" x:Name="imgDriverSignature" StyleId="imgDriverSignature"  BackgroundColor="{StaticResource WhiteBackground}"/>
+
+				<StackLayout Orientation="Horizontal" HeightRequest="35" VerticalOptions="Center">
+					<Label HeightRequest="35" TextColor="{StaticResource DarkestText}" Text="Driver Name" />
+					<Label HeightRequest="35" TextColor="{StaticResource DarkestText}" VerticalOptions="Center" HorizontalOptions="FillAndExpand" x:Name="DriverName" Text="{Binding DriverFullName}" />
+				</StackLayout>
+			</StackLayout>
+			</ScrollView>
+		</StackLayout>-->
+	</ContentPage.Content>
+</l:ExtendedContentPage>

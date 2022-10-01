@@ -1,0 +1,1 @@
+D:\Projects\MAUI\m.transport\m.transport\m.transport.csproj;x64

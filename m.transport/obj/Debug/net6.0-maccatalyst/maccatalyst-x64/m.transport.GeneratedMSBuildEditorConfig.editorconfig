@@ -1,0 +1,358 @@
+is_global = true
+build_property.TargetFramework = net6.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = m.transport
+build_property.ProjectDir = D:\Projects\MAUI_newTransportApp\m.transport\m.transport\
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/About.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.About.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\About.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\About.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.App.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\App.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\App.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/AppSettings.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.AppSettings.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\AppSettings.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\AppSettings.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Cells/DamageCell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Cells.DamageCell.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Cells\DamageCell.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Cells\DamageCell.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Cells/DamageCodeCell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Cells.DamageCodeCell.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Cells\DamageCodeCell.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Cells\DamageCodeCell.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Cells/DeliveryDamageCell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Cells.DeliveryDamageCell.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Cells\DeliveryDamageCell.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Cells\DeliveryDamageCell.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Cells/ExpenseCell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Cells.ExpenseCell.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Cells\ExpenseCell.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Cells\ExpenseCell.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Cells/LoadCellHeaderContent.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Cells.LoadCellHeaderContent.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Cells\LoadCellHeaderContent.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Cells\LoadCellHeaderContent.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Cells/ManageDeliveryVehicleCellContent.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Cells.ManageDeliveryVehicleCellContent.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Cells\ManageDeliveryVehicleCellContent.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Cells\ManageDeliveryVehicleCellContent.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Cells/ManageExceptionCell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Cells.ManageExceptionCell.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Cells\ManageExceptionCell.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Cells\ManageExceptionCell.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Cells/ManageVehicleCellContent.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Cells.ManageVehicleCellContent.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Cells\ManageVehicleCellContent.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Cells\ManageVehicleCellContent.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Cells/PayHistoryCell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Cells.PayHistoryCell.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Cells\PayHistoryCell.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Cells\PayHistoryCell.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Cells/RunDetailsCell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Cells.RunDetailsCell.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Cells\RunDetailsCell.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Cells\RunDetailsCell.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Cells/SelectDeliverVehicleCell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Cells.SelectDeliverVehicleCell.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Cells\SelectDeliverVehicleCell.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Cells\SelectDeliverVehicleCell.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Cells/SelectDeliveryHistoryCellContent.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Cells.SelectDeliveryHistoryCellContent.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Cells\SelectDeliveryHistoryCellContent.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Cells\SelectDeliveryHistoryCellContent.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Cells/SelectLoadCell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Cells.SelectLoadCell.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Cells\SelectLoadCell.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Cells\SelectLoadCell.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Cells/SelectLocationCellContent.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Cells.SelectLocationCellContent.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Cells\SelectLocationCellContent.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Cells\SelectLocationCellContent.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Cells/SelectVehicleCell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Cells.SelectVehicleCell.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Cells\SelectVehicleCell.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Cells\SelectVehicleCell.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Cells/VehicleDeliveryCell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Cells.VehicleDeliveryCell.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Cells\VehicleDeliveryCell.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Cells\VehicleDeliveryCell.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Cells/VehicleDeliveryCellHeader.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Cells.VehicleDeliveryCellHeader.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Cells\VehicleDeliveryCellHeader.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Cells\VehicleDeliveryCellHeader.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Cells/VehicleDetailCell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Cells.VehicleDetailCell.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Cells\VehicleDetailCell.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Cells\VehicleDetailCell.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Cells/VehiclePickupCell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Cells.VehiclePickupCell.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Cells\VehiclePickupCell.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Cells\VehiclePickupCell.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Cells/VehiclePickupCellHeader.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Cells.VehiclePickupCellHeader.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Cells\VehiclePickupCellHeader.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Cells\VehiclePickupCellHeader.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Comment.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Comment.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Comment.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Comment.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/CompleteDelivery.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.CompleteDelivery.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\CompleteDelivery.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\CompleteDelivery.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/CreateExpense.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.CreateExpense.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\CreateExpense.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\CreateExpense.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/CurrentLoad.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.CurrentLoad.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\CurrentLoad.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\CurrentLoad.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/CustomNavigationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.CustomNavigationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\CustomNavigationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\CustomNavigationPage.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/DeliveryConditions.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.DeliveryConditions.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\DeliveryConditions.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\DeliveryConditions.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/DeliveryDamage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.DeliveryDamage.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\DeliveryDamage.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\DeliveryDamage.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/DeliveryHistory.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.DeliveryHistory.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\DeliveryHistory.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\DeliveryHistory.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/EPOD.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.EPOD.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\EPOD.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\EPOD.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Inspection.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Inspection.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Inspection.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Inspection.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/LocationDetail.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.LocationDetail.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\LocationDetail.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\LocationDetail.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/Login.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.Login.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Login.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Login.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\MainPage.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/ManageDelivery.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.ManageDelivery.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\ManageDelivery.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\ManageDelivery.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/ManageExceptions.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.ManageExceptions.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\ManageExceptions.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\ManageExceptions.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/ManageLoad.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.ManageLoad.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\ManageLoad.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\ManageLoad.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/MapPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.MapPage.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\MapPage.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\MapPage.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/PayHistory.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.PayHistory.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\PayHistory.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\PayHistory.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/PopupAlertText.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.PopupAlertText.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\PopupAlertText.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\PopupAlertText.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/RunDetails.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.RunDetails.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\RunDetails.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\RunDetails.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/SelectDamageArea.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.SelectDamageArea.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\SelectDamageArea.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\SelectDamageArea.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/SelectDamageLocation.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.SelectDamageLocation.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\SelectDamageLocation.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\SelectDamageLocation.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/SelectDamageSeverity.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.SelectDamageSeverity.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\SelectDamageSeverity.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\SelectDamageSeverity.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/SelectDamageType.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.SelectDamageType.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\SelectDamageType.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\SelectDamageType.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/SelectLocation.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.SelectLocation.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\SelectLocation.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\SelectLocation.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/SelectReason.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.SelectReason.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\SelectReason.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\SelectReason.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/SelectVehicle.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.SelectVehicle.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\SelectVehicle.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\SelectVehicle.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/SettingsModal.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.SettingsModal.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\SettingsModal.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\SettingsModal.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/TestScanner.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.TestScanner.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\TestScanner.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\TestScanner.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/UnpaidExpense.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.UnpaidExpense.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\UnpaidExpense.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\UnpaidExpense.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/VehicleDetail.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.VehicleDetail.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\VehicleDetail.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\VehicleDetail.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/ViewImage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.ViewImage.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\ViewImage.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\ViewImage.xaml
+
+[D:/Projects/MAUI_newTransportApp/m.transport/m.transport/UI/ViewLog.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = m.transport.UI.ViewLog.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\ViewLog.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\ViewLog.xaml

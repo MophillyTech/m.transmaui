@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+		xmlns:l="clr-namespace:m.transport"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="m.transport.DamageCodeContent">
+	<ContentView.Content>
+		<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource PrimaryBackground}" Padding="20,0,0,0">
+			<Label TextColor="{StaticResource DarkText}" VerticalOptions="Center" MinimumWidthRequest="45" WidthRequest="45"  x:Name="code"        FontSize="Bold,Large" Text="{Binding Code}"></Label>
+			<Label TextColor="{StaticResource DarkText}" VerticalOptions="Center" HorizontalOptions="FillAndExpand"  x:Name="description" FontSize="Medium" Text="{Binding Description}"></Label>
+		</StackLayout>
+	</ContentView.Content>
+</ContentView>
+	

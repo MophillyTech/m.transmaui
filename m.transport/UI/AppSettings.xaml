@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+		xmlns:l="clr-namespace:m.transport"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="m.transport.AppSettings" Title="Settings">
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Name="Close" Icon="" Activated="OnActivated" />
+	</ContentPage.ToolbarItems>
+
+	<StackLayout BackgroundColor="{StaticResource PrimaryBackground}" VerticalOptions="FillAndExpand">
+		<ScrollView >
+			<StackLayout x:Name="AttendedLayout" Orientation="Horizontal" Padding="15,10,15,10">
+				<Label HorizontalOptions="FillAndExpand" TextColor="{StaticResource DarkestText}" VerticalOptions="Center" Text="GPS Enabled?" />
+				<l:CustomSwitch x:Name="GPSSwitch" Toggled="GPSToggled" IsToggled="True" OffText="Off" OnText="On"/>
+			</StackLayout>
+		</ScrollView>
+	</StackLayout>	
+</ContentPage>

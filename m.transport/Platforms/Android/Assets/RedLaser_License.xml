@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>-NOTICE-</key>
+	<string>
+		THIS FILE IS DIGITALLY SIGNED. DO NOT MODIFY.
+		To update, login to the RedLaser developer portal using your username.
+	</string>
+	<key>Company Name</key>
+	<string>gsimpson@mophilly.com</string>
+	<key>User Name</key>
+	<string>gsimpson@mophilly.com</string>
+	
+	<key>iOS</key>
+	<dict>
+		<key>App Bundle IDs</key>
+		<array>
+			<string>com.mophilly.mtransport</string>
+		</array>
+	</dict>
+	<key>Android</key>
+	<dict>
+		<key>Root Class Names</key>
+		<array>
+			<string>m.transport.Android</string>
+		</array>
+	</dict>
+	
+</dict>
+</plist>
+-----BEGIN SIGNATURE-----
+Cfy5PADPZXcZv4csg0u11UK81Z6cW6Yx0hfdUNP/I1wh1kMDEHGzUCn/JXAKAp0e
+IH/r0tgA4DygGYqt1aAP146Z8PE87k2aHw3J2Vxc6EqpbCF1CXK3H+0ILZcAvcoa
+cfxKvFWC+l1BRXZzHdyEth7aXWP13dWLccuKf8IjMjjZGsgWBz0YBTrrUCN/29uF
+Hq+gIlltid0LPb3s+ldl+F7GUoAvFwIWm0eTpk9IQjDssaYvMWbIVxemwHLqbSGE
+yjNOoGc68DTJZsBp/sWY24IuWboi2f32oYNTHVUUxb43iGKq2V2yZpTwMhZiLyE4
+ko0nbERsgiyREYBn3jyc6Iv4RHzk/g1YqyRG/crwG8xVLRec+j3U+1zk8aeasQZq
+Q1B33lKXVDzyyyrrLF+dXE8d84sWcNm27XaeUwyDW81US2Xp1Wl4yGqH306TQpS5
+i+ZNetsbfBy7zFXCJnwwI/6OQRzWGQ7MPve5j/fmAvA73Q/XEfOI33so9h2YxjoA
+p7LssVTP1tpmCFBJDVHjlHhqBecpPcIRauXPxCt5E4ORqOHIw+EHVEAuPMT443KZ
+njbquC4RdO3rKWqiCXIbGpvhGLBMklxjYF2ytmDWIAn1V/O559dmZD6aixy4ig1M
+UDCu4fyDJWeFE2orptkmzG9/LCUtTFQeg7ePRXTH0ps=
+-----END SIGNATURE-----

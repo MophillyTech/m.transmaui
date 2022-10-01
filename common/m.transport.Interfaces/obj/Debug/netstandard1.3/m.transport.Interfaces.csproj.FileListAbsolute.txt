@@ -1,0 +1,8 @@
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.Interfaces\bin\Debug\netstandard1.3\m.transport.Interfaces.deps.json
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.Interfaces\bin\Debug\netstandard1.3\m.transport.Interfaces.dll
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.Interfaces\bin\Debug\netstandard1.3\m.transport.Interfaces.pdb
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.Interfaces\obj\Debug\netstandard1.3\m.transport.Interfaces.csproj.AssemblyReference.cache
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.Interfaces\obj\Debug\netstandard1.3\m.transport.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.Interfaces\obj\Debug\netstandard1.3\m.transport.Interfaces.csproj.CoreCompileInputs.cache
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.Interfaces\obj\Debug\netstandard1.3\m.transport.Interfaces.dll
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.Interfaces\obj\Debug\netstandard1.3\m.transport.Interfaces.pdb

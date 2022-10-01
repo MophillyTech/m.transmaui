@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+		xmlns:l="clr-namespace:m.transport" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="m.transport.LocationDetail" Title="Location Detail">
+	<ContentPage.Content>
+	<ScrollView BackgroundColor="{StaticResource PrimaryBackground}" >
+		<StackLayout Orientation="Vertical" Padding="20,10,20,10">
+	
+			<StackLayout Padding="0,0,0,0">
+				<Label Text="Name" FontSize="Medium"  FontAttributes="Bold" HeightRequest="20" TextColor="{StaticResource BlueText}"/>
+				<Label Text="{Binding Name}" FontSize="Small" TextColor="{StaticResource DarkestText}"/>
+			</StackLayout>
+
+			<StackLayout Padding="0,15,0,0">
+				<Label Text="LocationID" FontSize="Medium"  FontAttributes="Bold" HeightRequest="20" TextColor="{StaticResource BlueText}"/>
+				<Label Text="{Binding LocationID}" FontSize="Small" TextColor="{StaticResource DarkestText}"/>
+			</StackLayout>
+
+			<StackLayout Padding="0,15,0,0">
+				<Label Text="Type" FontSize="Medium"  FontAttributes="Bold" HeightRequest="20" TextColor="{StaticResource BlueText}"/>
+				<Label Text="{Binding Type}" FontSize="Small" TextColor="{StaticResource DarkestText}"/>
+			</StackLayout>
+
+			<StackLayout Padding="0,15,0,0">
+				<Label Text="Sub Type" FontSize="Medium"  FontAttributes="Bold" HeightRequest="20" TextColor="{StaticResource BlueText}"/>
+				<Label Text="{Binding SubType}" FontSize="Small" TextColor="{StaticResource DarkestText}"/>
+			</StackLayout>
+
+			<StackLayout Padding="0,15,0,0">
+				<Label Text="Address" FontSize="Medium"  FontAttributes="Bold" HeightRequest="20" TextColor="{StaticResource BlueText}"/>
+				<Label Text="{Binding Address}" FontSize="Small" TextColor="{StaticResource DarkestText}"/>
+			</StackLayout>
+				
+			<StackLayout Padding="0,15,0,0">
+				<Label Text="Phone" FontSize="Medium"  FontAttributes="Bold" HeightRequest="20" TextColor="{StaticResource BlueText}"/>
+				<Label Text="{Binding Phone}" FontSize="Small" TextColor="{StaticResource DarkestText}"/>
+			</StackLayout>
+				
+			<StackLayout Padding="0,15,0,0">
+				<Label Text="Location Notes" FontSize="Medium"  FontAttributes="Bold" HeightRequest="20" TextColor="{StaticResource BlueText}"/>
+				<Label Text="{Binding Notes}" FontSize="Small" TextColor="{StaticResource DarkestText}"/>
+			</StackLayout>
+
+			<StackLayout Padding="0,15,0,0">
+				<Label Text="Location Message" FontSize="Medium"  FontAttributes="Bold" HeightRequest="20" TextColor="{StaticResource BlueText}"/>
+				<Label Text="{Binding Message}" FontSize="Small" TextColor="{StaticResource DarkestText}"/>
+			</StackLayout>
+
+			<StackLayout Padding="0,15,0,0">
+				<Label Text="Driver Directions" FontSize="Medium"  FontAttributes="Bold" HeightRequest="20" TextColor="{StaticResource BlueText}"/>
+				<Label Text="{Binding DriverDirections}" FontSize="Small" TextColor="{StaticResource DarkestText}"/>
+			</StackLayout>
+				
+			<StackLayout Padding="0,15,0,0">
+				<Label Text="Delivery Times" FontSize="Medium"  FontAttributes="Bold" HeightRequest="20" TextColor="{StaticResource BlueText}"/>
+				<Label Text="{Binding DeliveryTimes}" FontSize="Small" TextColor="{StaticResource DarkestText}"/>
+			</StackLayout>
+				
+		</StackLayout>
+	</ScrollView>
+
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,11 @@
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.ServiceInterface\bin\Debug\netstandard2.0\m.transport.ServiceInterface.deps.json
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.ServiceInterface\bin\Debug\netstandard2.0\m.transport.ServiceInterface.dll
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.ServiceInterface\bin\Debug\netstandard2.0\m.transport.ServiceInterface.pdb
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.ServiceInterface\bin\Debug\netstandard2.0\m.transport.Domain.dll
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.ServiceInterface\bin\Debug\netstandard2.0\m.transport.Domain.pdb
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.ServiceInterface\obj\Debug\netstandard2.0\m.transport.ServiceInterface.csproj.AssemblyReference.cache
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.ServiceInterface\obj\Debug\netstandard2.0\m.transport.ServiceInterface.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.ServiceInterface\obj\Debug\netstandard2.0\m.transport.ServiceInterface.csproj.CoreCompileInputs.cache
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.ServiceInterface\obj\Debug\netstandard2.0\m.transport.ServiceInterface.csproj.CopyComplete
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.ServiceInterface\obj\Debug\netstandard2.0\m.transport.ServiceInterface.dll
+D:\Projects\MAUI_Migrate\m.transport\common\m.transport.ServiceInterface\obj\Debug\netstandard2.0\m.transport.ServiceInterface.pdb

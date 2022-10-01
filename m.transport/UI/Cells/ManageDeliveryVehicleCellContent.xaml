@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+			 xmlns:l="clr-namespace:m.transport"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="m.transport.ManageDeliveryVehicleCellContent">
+	<StackLayout BackgroundColor="{StaticResource PrimaryBackground}" Orientation="Horizontal" Padding="0,0,12,0">
+	<BoxView Color="Red" WidthRequest="20" />
+	<StackLayout >
+		<StackLayout Orientation="Horizontal">
+			<Label TextColor="{StaticResource DarkestText}" WidthRequest="150" StyleId="vehicleVIN" x:Name="VIN" FontSize="Medium"  FontAttributes="Bold" Text="{Binding VIN8}"></Label>
+			<Label TextColor="{StaticResource DarkestText}" VerticalOptions="Center" WidthRequest="150" x:Name="Status" FontSize="Small" Text="Delivering"></Label>
+			<Label x:Name="Damage" VerticalOptions="Center" FontSize="Small" TextColor="{StaticResource ErrorText}" Text="D" IsVisible="{Binding HasDeliveryDamage}"></Label>
+		</StackLayout>
+		<StackLayout Orientation="Horizontal">
+			<Label TextColor="{StaticResource DarkestText}" x:Name="Year" FontSize="Small" Text="{Binding DatsVehicle.VehicleYear}"></Label>
+			<Label TextColor="{StaticResource DarkestText}" x:Name="Make" FontSize="Small" Text="{Binding DatsVehicle.Make}"></Label>
+			<Label TextColor="{StaticResource DarkestText}" x:Name="Model" FontSize="Small" Text="{Binding DatsVehicle.Model}"></Label>
+			<Label TextColor="{StaticResource DarkestText}" x:Name="Color" FontSize="Small" Text="{Binding DatsVehicle.Color}"></Label>
+		</StackLayout>
+
+		<Label x:Name="Comment" IsVisible="{Binding HasDeliveringNotes}"  TextColor="{StaticResource DarkestText}" FontSize="Small" Text="{Binding DatsVehicle.DropOffInspectionNotes}" LineBreakMode="WordWrap"></Label>
+		<StackLayout BackgroundColor="{StaticResource PrimaryBackground}" Padding="0,0,0,0" Orientation="Horizontal">
+			<Image IsVisible="{Binding HasDeliveringDamagePhoto}" StyleId="photo" MinimumHeightRequest="36" HeightRequest="36" MinimumWidthRequest="36" WidthRequest="36"
+				Source="camera.png" VerticalOptions="Center"/>
+			<l:ItemsStackLayout BackgroundColor="{StaticResource PrimaryBackground}" VerticalOptions="Center"
+				ItemsSource="{Binding DeliveryDamageList}">
+				<l:ItemsStackLayout.ItemTemplate>
+					<DataTemplate>
+						<Label FontSize="10" LineBreakMode="TailTruncation" Text="{Binding Summary}" TextColor="{StaticResource DarkestText}" VerticalOptions="Center"/>
+					</DataTemplate>
+				</l:ItemsStackLayout.ItemTemplate>
+			</l:ItemsStackLayout>
+		</StackLayout>
+	</StackLayout>
+</StackLayout>
+</ContentView>	

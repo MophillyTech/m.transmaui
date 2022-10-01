@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MR.Gestures.iOS</name>
+    </assembly>
+    <members>
+        <member name="P:MR.Gestures.iOS.Settings.LicenseKey">
+            <summary>
+            Set the LicenseKey to the key you got when you purchased a license for this app. The license key varies with the app name.
+            </summary>
+        </member>
+        <member name="P:MR.Gestures.iOS.Settings.SwipeVelocityThreshold">
+            <summary>
+            The velocity (UIPanGestureRecognizer.VelocityInView) of a lifted finger in X or Y direction must be at least this value to count as Swipe.
+            The default value is 800/800. Set it to a higher value if you want the user to move faster.
+            </summary>
+        </member>
+    </members>
+</doc>

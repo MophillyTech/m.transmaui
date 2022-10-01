@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+		xmlns:l="clr-namespace:m.transport"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		xmlns:sys="clr-namespace:System;assembly=mscorlib"
+		x:Class="m.transport.PayHistory" Title="Pay History">
+	<ContentPage.ToolbarItems>
+        <ToolbarItem Text="Done"  IconImageSource="" Clicked="OnDone" />
+	</ContentPage.ToolbarItems>
+	<ContentPage.Content>
+		<StackLayout BackgroundColor="{StaticResource PrimaryBackground}" VerticalOptions="FillAndExpand">
+			<StackLayout Padding="10,5,5,5">
+			 	<Label x:Name="CurrPeriod" VerticalTextAlignment="Center" HeightRequest="40" Text="{Binding CurrentTotal}" VerticalOptions="Center" FontSize="Medium" FontAttributes="Bold"
+					TextColor="{StaticResource DarkestText}"  />
+                <Label x:Name="PrevPeriod" VerticalTextAlignment="Center" HeightRequest="40" Text="{Binding PrevTotal}" VerticalOptions="Center" FontSize="Medium" FontAttributes="Bold"
+					TextColor="{StaticResource DarkestText}"  />	
+			</StackLayout>
+
+			<StackLayout BackgroundColor="{StaticResource DarkBackground}" VerticalOptions="Center" Orientation="Horizontal" Padding="10,5">
+				<Label x:Name="DateLabel" Text="Date" TextColor="{StaticResource LightestText}"
+						VerticalOptions="Center" WidthRequest="80" MinimumWidthRequest="80" FontSize="Medium"/>
+				<Label x:Name="DetailLabel" Text="Details"
+						VerticalOptions="Center" HorizontalOptions="FillAndExpand" FontSize="Medium"
+						TextColor="{StaticResource LightestText}" />
+				<Label x:Name="PayLabel" Text="Pay"
+						VerticalOptions="Center" WidthRequest="90" MinimumWidthRequest="90" FontSize="Medium" 
+						TextColor="{StaticResource LightestText}" />
+			</StackLayout>
+			<ListView BackgroundColor="{StaticResource PrimaryBackground}" ItemsSource="{Binding PayHistory}"  
+				VerticalOptions="FillAndExpand" x:Name="PayList" HasUnevenRows="true" ItemTapped="RunSelected"/>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
